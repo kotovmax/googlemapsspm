@@ -9,5 +9,7 @@ How to update:
 ```sh
 swift package compute-checksum ../path/to/archive.zip
 ```
-5) Update Package.swift with archive link and checksum
-6) Commit zip archive to this repo
+5) Update Package.swift with archive link from future GitHub Release and checksum
+6) Commit and push changes
+7) Create GitHub Release, add `zip` archive as binary assests
+

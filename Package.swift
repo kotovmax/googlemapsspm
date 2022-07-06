@@ -26,7 +26,7 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "GoogleMaps",
-            url: "https://dl.google.com/geosdk/GoogleMaps-7.0.0-beta.tar.gz",
+            url: "https://github.com/kotovmax/googlemapsspm/releases/download/v7.0.0/GoogleMaps-7.0.0.zip",
             checksum: "6f860bed60ece765eedb967ffa9656341b2e132d269ca3ec178dea86b66172b8"
         )
     ]
