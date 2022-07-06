@@ -9,25 +9,52 @@ let package = Package(
         .iOS(.v13)
     ],
     products: [
-        // Products define the executables and libraries a package produces, and make them visible to other packages.
-        .library(
-            name: "GoogleMaps",
-            targets: ["GoogleMaps"]
-        ),
         .library(
             name: "GoogleMapsBase",
-            targets: ["GoogleMaps"]
+            targets: [
+                "GoogleMapsBase"
+            ]
         ),
         .library(
             name: "GoogleMapsCore",
-            targets: ["GoogleMaps"]
+            targets: [
+                "GoogleMapsCore"
+            ]
         ),
-    ],
+        .library(
+            name: "GoogleMaps",
+            targets: [
+                "GoogleMaps",
+                "GoogleMapsBase",
+                "GoogleMapsCore"
+            ]
+        ),
+        .library(
+            name: "GoogleMapsM4B",
+            targets: [
+                "GoogleMapsM4B"
+            ]
+        ),    ],
     targets: [
         .binaryTarget(
             name: "GoogleMaps",
-            url: "https://github.com/kotovmax/googlemapsspm/releases/download/v7.0.0/GoogleMaps-7.0.0.zip",
-            checksum: "cbf4728465222faa7e71d0e5adba28473856a59075e6eebbd2e713bf3c9eaafb"
-        )
+            url: "https://github.com/kotovmax/googlemapsspm/releases/download/v7.0.0/GoogleMaps.xcframework.zip",
+            checksum: "fedd67e86116a5c56002432f8a280b8252c10ae8f0ec79cc34e56fcb5fac7590"
+        ),
+        .binaryTarget(
+            name: "GoogleMapsBase",
+            url: "https://github.com/kotovmax/googlemapsspm/releases/download/v7.0.0/GoogleMapsBase.xcframework.zip",
+            checksum: "9e50b591c317f93deb4a302c3c52e873cbc7c0e7fa38e8af54ccd904e9fd31c2"
+        ),
+        .binaryTarget(
+            name: "GoogleMapsCore",
+            url: "https://github.com/kotovmax/googlemapsspm/releases/download/v7.0.0/GoogleMapsCore.xcframework.zip",
+            checksum: "2baca4bb28dde781d0f729775d79b89092ab364a1b708e3f7b0c23a823611955"
+        ),
+        .binaryTarget(
+            name: "GoogleMapsM4B",
+            url: "https://github.com/kotovmax/googlemapsspm/releases/download/v7.0.0/GoogleMapsM4B.xcframework.zip",
+            checksum: "20667b3195cd31ff84d47a308f0a577ab0afb2b2b72ae70a9e55a6e26aae10a4"
+        ),
     ]
 )

@@ -13,3 +13,7 @@ swift package compute-checksum ../path/to/archive.zip
 6) Commit and push changes
 7) Create GitHub Release, add `zip` archive as binary assests
 
+
+
+## License
+The **Google Maps iOS SDK** and **Google Places iOS SDK** libraries are the property of Google and are subject to *Google's Terms of Service*. See [LICENSE.google](https://github.com/YAtechnologies/GoogleMaps-SP/blob/main/LICENSE.google) for details.
